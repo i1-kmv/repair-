@@ -27,22 +27,48 @@
         width: 240px
         &:first-child
             margin-right: 10px
+        &:focus 
+            border: 1px solid orange
     &__button
         width: 100%
-        min-height: 70px    
+        min-height: 70px 
+        font-size: 16px
+        font-weight: 400
+    &__call
+        display: flex
+        justify-content: space-between
+        align-items: top
+        padding-top: 31px 
+    &__slogan1
+        display: block
+        width: 235px
+        font-size: 15px
+        line-height: 24px
+    &__slogan2
+        width: 198px
+        font-size: 15px
+        & p
+            margin: 0 0 10px 0
+        & a 
+            +bold 
+            text-decoration: none
+            color: $text-color
 @media ( max-width:  1200px)
     .offer
         background-size: cover
         &__input
             width: 100%
             margin-bottom: 10px
-        &__button
-            font-size: 13px
 @media ( max-width:  768px)  
     .offer
         background: #ffffff
         &-block
             width: 100%
             padding-right: 0         
-            
+        &__call
+            flex-direction: column
+        &__slogan1
+            margin-bottom: 18px
+        &__button
+            font-size: 14px    
 
