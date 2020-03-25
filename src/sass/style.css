@@ -34,8 +34,8 @@ img {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 1200px) {
@@ -550,7 +550,7 @@ img {
 .brif {
   background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y , no-repeat;
 }
 
@@ -655,11 +655,6 @@ img {
 @media (max-width: 1200px) {
   .brif__form {
     padding-left: 30px;
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  .brif__subtitle {
-    margin-bottom: 30px;
   }
   .interview {
     padding-right: 30px;
@@ -671,19 +666,26 @@ img {
   .interview__subtitle {
     margin-bottom: 30px;
   }
-  .interview__listtext {
+  .interview__list__text {
     font-size: 14px;
     max-width: 300px;
   }
   .interview__list__counter {
     margin-right: 20px;
   }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 768px) {
   .brif {
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
-    background-position: top center, center buttom;
+    background-position: top center, center bottom;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x , no-repeat;
   }
@@ -693,7 +695,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .brifform {
+  .brif__form {
     margin-top: 80px;
   }
 }
