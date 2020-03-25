@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт строительной компании</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="css/animate.css">
    
 </head>
 <body>
@@ -13,7 +15,7 @@
        <div class="container">
            <div class="navbar-block">
                <div class="navbar__logo">
-                   <img src="img/navlogo.png" alt="Логотип">
+                   <img src="img/navbar/navlogo.png" alt="Логотип">
                </div>
                <div class="navbar__info">
                    <div class="navbar__contakts">
@@ -31,24 +33,24 @@
           <div class="container">
             <div class="hero-block">
                 <div class="hero-text">
-                    <h1 class="hero-text__title">
+                    <h1 class="hero-text__title wow rollIn">
                      Внутренняя отделка 
                      помещений "под ключ"
                     </h1>
-                    <span class="hero-text__subtitle">
+                    <span class="hero-text__subtitle wow rollIn">
                      с гарантией качества, прописанной в договоре   
                     </span>
-                    <ul class="hero-list">
-                        <li class="hero-list__item">
+                    <ul class="hero-list wow fadeInLeftBig">
+                        <li class="hero-list__item ">
                             <div class="hero-list__image">
-                                <img src="img/clock.png" alt="clock">
+                                <img src="img/hero/clock.png" alt="clock">
                             </div>
                             <span class="hero-list__text">Точно соблюдаем сроки
                          </span>
                         </li>
                         <li class="hero-list__item">
                          <div class="hero-list__image">
-                             <img src="img/calculator.png" alt="calculator">
+                             <img src="img/hero/calculator.png" alt="calculator">
                          </div>
                          <span class="hero-list__text">Рассчитаем смету на работы<br>
                              и материалы в день обращения
@@ -56,7 +58,7 @@
                         </li>
                         <li class="hero-list__item">
                          <div class="hero-list__image">
-                             <img src="img/paint.png" alt="paint">
+                             <img src="img/hero/paint.png" alt="paint">
                          </div>
                          <span class="hero-list__text">Предложим более 100 вариантов<br>
                              исполнения дизайна Вашего жилья
@@ -65,7 +67,7 @@
                     </ul>
                 </div>
                 <div class="hero-image">
-                    <img  src="img/hero-image.png" alt="План квартиры">
+                    <img  src="img/hero/hero-image.png" alt="План квартиры">
                 </div>
             </div>
           </div>
@@ -74,20 +76,20 @@
        <section class="offer section">
            <div class="container">
               <div class="offer-block">
-                <div class="h2 section-title offer__title">Мы бесплатно разработаем 
+                <div class="h2 section-title offer__title wow rollIn">Мы бесплатно разработаем 
                     дизайн-проект Вашего жилья 
                     и реализуем его!
                     </div>
-                   <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку 
+                   <span class="section-subtitle offer__subtitle wow rollIn">Оставьте заявку на разработку 
                     бесплатного дизайн-проекта!
                     </span>
-                    <form action="#" class="form offer__form">
+                    <form action="#" class="form offer__form  wow fadeInLeftBig">
                        <input type="text" class="input offer__input" placeholder="Ваше имя">
                        <input type="tell" class="input offer__input" placeholder="Ваш телефон">  
                        <button class="button offer__button">Получить бесплатный дизайн-проект
                     </button>
                     </form>
-                    <div class="offer__call">
+                    <div class="offer__call  wow fadeInLeftBig">
                         <span class="offer__slogan1">
                             Наш менеджер перезвонит Вам
                             в течение 60 секунд
@@ -100,6 +102,80 @@
               </div>  
             </div>
        </section>
+
+       <section class="section portfolio">
+           <div class="container">
+               <h2 class="section-title portfolio__title wow rollIn">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2>
+                   <div class="slider">
+                       <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt="Интерьер"></div>
+                       <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt="Интерьер"></div>
+                       <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt="Интерьер"></div>
+                       <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.png" alt="Интерьер"></div>
+                       <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.png" alt="Интерьер"></div>
+                       <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.png" alt="Интерьер"></div>
+                   </div>    
+                   <div class="arrows portfolio__arrows">
+                       <div class="arrows__left">
+                           <img src="img/portfolio/left-arrow_(3).png" alt="Листать влево">
+                       </div>
+                       <div class="arrows__right">
+                           <img src="img/portfolio/left-arrow_(3)_копия.png" alt="Листать вправо">
+                       </div>
+                   </div>
+           </div>
+       </section>
+       <section class="section price">
+           <div class="container">
+               <h2 class="section-title price__title wow rollIn">У нас очень гибкая система скидок на комплексные работы!
+                </h2>
+               <span class="section-subtitle price__subtitle wow rollIn">Прайс на наши услуги
+            </span>
+            <div class="cards">
+                <div class="card price__card wow fadeInUp" data-wow-delay='0.1s'>
+                    <div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                        <a href="#" class="card__link">Узнать цену</a>
+                    </div>
+                </div>
+                <div class="card price__card wow fadeInUp" data-wow-delay='0.2s'>
+                    <div class="card__image"><img src="img/price/livingroom.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт комнат и квартир</h4>
+                        <a href="#" class="card__link">Узнать цену</a>
+                    </div>
+                </div>
+                <div class="card price__card wow fadeInUp" data-wow-delay='0.3s'>
+                    <div class="card__image"><img src="img/price/office.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Отделка офисных помещений</h4>
+                        <a href="#" class="card__link">Узнать цену</a>
+                    </div>
+                </div>
+                <div class="card price__card wow fadeInUp" data-wow-delay='0.4s'>
+                    <div class="card__image"><img src="img/price/loft.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт в новостройках</h4>
+                        <a href="#" class="card__link">Узнать цену</a>
+                    </div>
+                </div>
+                <div class="card price__card wow fadeInUp" data-wow-delay='0.5s'>
+                    <div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт кухонь</h4>
+                        <a href="#" class="card__link">Узнать цену</a>
+                    </div>
+                </div>
+                <div class="card price__card wow fadeInUp" data-wow-delay='0.6s' >
+                    <div class="card__image"><img src="img/price/house.png" alt=""></div>
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт дач и коттеджей</h4>
+                        <a href="#" class="card__link">Узнать цену</a>
+                    </div>
+                </div>
+            </div>                    
+           </div>
+       </section>
    </div>
 
    <div class="modal" id="modal">
@@ -108,6 +184,40 @@
             <h4 class="modal-dialog title">Всплывающее окно</h4>
        </div>
    </div>
-   <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script>-->
+   <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+      new WOW().init();
+          $(document).ready(function() {
+          $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('.arrows__left'),
+            nextArrow: $('.arrows__right'),
+            responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+                }
+            }
+            ]
+          })
+      })
+  </script>
 </body>
 </html>
