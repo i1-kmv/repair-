@@ -459,6 +459,7 @@ img {
 .price__title {
   margin: auto;
   margin-bottom: 58px;
+  line-height: 45px;
 }
 
 .price__subtitle {
@@ -657,7 +658,7 @@ img {
     padding-left: 30px;
   }
   .interview {
-    padding-right: 30px;
+    padding-right: 10px;
   }
   .interview__title {
     font-size: 20px;
@@ -667,10 +668,12 @@ img {
     margin-bottom: 30px;
   }
   .interview__list__text {
-    font-size: 14px;
-    max-width: 300px;
+    font-size: 12px;
+    max-width: 280px;
   }
   .interview__list__counter {
+    max-width: 25px;
+    max-height: 25px;
     margin-right: 20px;
   }
   .form__title {
@@ -697,6 +700,246 @@ img {
   }
   .brif__form {
     margin-top: 80px;
+  }
+}
+
+.actions__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin: auto;
+  max-width: 650px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+.actions__subtitle {
+  display: block;
+  text-align: center;
+  margin-bottom: 69px;
+}
+
+.actions-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.actions__item {
+  margin: 0px 31px;
+}
+
+.actions__image {
+  margin-bottom: 30px;
+}
+
+.actions__text {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  max-width: 110px;
+}
+
+@media (max-width: 1200px) {
+  .actions__item {
+    margin-bottom: 30px;
+  }
+  .actions-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .actions__row {
+    height: 0;
+    width: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .actions {
+    padding-top: 0;
+  }
+  .actions__title {
+    line-height: 20px;
+    margin-top: 0px;
+  }
+  .actions__item {
+    margin-bottom: 29px;
+  }
+  .actions-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .actions__row {
+    height: 0;
+    width: 0;
+  }
+}
+
+.slogan-box {
+  height: 280px;
+  background-color: #ffc000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slogan__text {
+  display: block;
+  width: 900px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+@media (max-width: 1200px) {
+  .slogan__text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slogan-box {
+    padding: 0 30px;
+  }
+  .slogan__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.advantages-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__item1 {
+  width: 370px;
+  height: 410px;
+  background-image: url("../img/advantages/item1.jpg");
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.advantages__item2 {
+  width: 370px;
+  height: 410px;
+  background-image: url("../img/advantages/item2.jpg");
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.advantages__item3 {
+  width: 370px;
+  height: 410px;
+  background-image: url("../img/advantages/item3.png");
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.advantages__text {
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  max-width: 280px;
+}
+
+.advantages__bold {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .advantages-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages__item1, .advantages__item2, .advantages__item3 {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slogan-box {
+    padding: 0 30px;
+  }
+  .slogan__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .slogan__item1, .slogan__item2, .slogan__item3 {
+    margin: 20px auto;
+  }
+}
+
+.diploms {
+  margin-top: 0;
+}
+
+.diploms-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin: auto;
+  max-width: 650px;
+  line-height: 45px;
+  text-align: center;
+  margin-bottom: 59px;
+}
+
+.diploms-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.diploms__image {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.diploms__text {
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  max-width: 270px;
+}
+
+@media (max-width: 1200px) {
+  .diploms-items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .diploms__item {
+    margin: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

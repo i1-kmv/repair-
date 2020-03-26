@@ -1,0 +1,46 @@
+.advantages
+    &-box
+        display: flex
+        justify-content: space-between
+    &__item1
+        width: 370px
+        height: 410px
+        background-image: url('../img/advantages/item1.jpg')
+        margin-right: 20px
+        margin-top: 20px
+    &__item2
+        width: 370px
+        height: 410px
+        background-image: url('../img/advantages/item2.jpg')
+        margin-right: 20px
+        margin-top: 20px
+    &__item3
+        width: 370px
+        height: 410px
+        background-image: url('../img/advantages/item3.png')
+        margin-right: 20px
+        margin-top: 20px
+    &__text
+        display: block
+        margin-left: 20px
+        margin-top: 20px
+        font-size: 16px
+        max-width: 280px
+    &__bold
+        font-weight: bold
+@media ( max-width:  1200px)
+    .advantages
+        &-box
+          flex-wrap: wrap
+          justify-content: center
+        &__item1, &__item2, &__item3
+           margin: 20px 
+@media ( max-width:  768px)
+    .slogan
+        &-box
+            padding: 0 30px
+        &__text
+          font-size: 18px
+          line-height: 25px
+        &__item1, &__item2, &__item3
+           margin: 20px auto
