@@ -334,6 +334,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: no wrap;
+      flex-wrap: no wrap;
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
@@ -687,6 +689,7 @@ img {
 
 @media (max-width: 768px) {
   .brif {
+    padding-bottom: 40px;
     background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 50%, cover;
@@ -697,9 +700,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 20px;
   }
-  .brif__form {
-    margin-top: 80px;
+  .brif__interview {
+    margin-bottom: 90px;
   }
 }
 
