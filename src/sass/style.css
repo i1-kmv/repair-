@@ -695,6 +695,9 @@ img {
     background-size: 100% 50%, cover;
     background-repeat: repeat-x , no-repeat;
   }
+  .brif__form {
+    padding-left: 5px;
+  }
   .brif-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -944,6 +947,117 @@ img {
   }
   .diploms__item {
     margin: 30px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 91px 0 93px 215px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 23px;
+  line-height: 20px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+.contacts-list__text__strong {
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-top: 50px;
+    padding-left: 100px;
+  }
+  .contacts__title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+  }
+  .map {
+    position: relative;
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    bottom: 0;
+  }
+  .contacts {
+    padding-left: 0;
+  }
+  .contacts-block {
+    position: relative;
+    top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
